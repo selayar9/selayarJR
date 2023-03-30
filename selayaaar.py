@@ -174,14 +174,18 @@ def clear():
 def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
-def banner():
+def hallo():
 	cetak(panel(f"""
- ______ ___  _____  ___________  _____  _____ _   __ 
- |  ___/ _ \/  __ \|  ___| ___ \|  _  ||  _  | | / /
- | |_ / /_\ \ /  \/| |__ | |_/ /| | | || | | | |/ /     |  |   Author Script Alvino
- |  _||  _  | |    |  __|| ___ \| | | || | | |    \     |  |   Update By BrayennnXD 
- | |  | | | | \__/\| |___| |_/ /\ \_/ /\ \_/ / |\  \    |  |   recode SelayarJR
- \_|  \_| |_/\____/\____/\____/  \___/  \___/\_| \_/                                                                                                     
+ 
+╔═══╗──╔╗───────────────────╔╦═══╗
+║╔═╗║──║║───────────────────║║╔═╗║
+║╚══╦══╣║╔══╦╗─╔╦══╦══╦══╦═╗║║╚═╝║
+╚══╗║║═╣║║╔╗║║─║║╔╗║╔╗║╔╗║╔╣║║╔╗╔╝
+║╚═╝║║═╣╚╣╔╗║╚═╝║╔╗║╔╗║╔╗║║╚╝║║║╚╗
+╚═══╩══╩═╩╝╚╩═╗╔╩╝╚╩╝╚╩╝╚╩╩══╩╝╚═╝
+────────────╔═╝║
+────────────╚══╝Alvino Brayen selayar
+
              """,width=90,title=f"Banner",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
@@ -218,7 +222,7 @@ def login_lagi334():
 				code, user_code = response['code'], response['user_code']
 				verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=1348564698517390%7C007c0a9101b9e1c8ffab727666805038&callback=LeetsharesCallback'.format(code))
 				r.headers.pop('content-type')
-				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
+				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 10; Redmi Note 7.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
 				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
 				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
 					print(" ╰─  Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
@@ -256,7 +260,7 @@ def login_lagi334():
 							print(f"\n ╰─  Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n ╰─  Login Berhasil | python BrayennnFB.py");exit()
+							print("\n ╰─  Login Berhasil | python selayaaar.py");exit()
 			except Exception as e:
 				print(" ╰─  Cookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
