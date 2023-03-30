@@ -85,7 +85,7 @@ for t in range(10000):
 	e=random.randrange(40,150)
 	brayen1=f'Mozilla/5.0 (Linux; Android {a}; ONEPLUS A6013.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	brayen2=f'Mozilla/5.0 (Linux; Android {a}; Redmi Note 9 Pro.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen3=f'Mozilla/5.0 (Linux; Android {a}; Nexus 5 Build/JOP40D.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen3=f'Mozilla/5.0 (Linux; Android {a}; Tesla_SP9_2.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	brayen4=f'Mozilla/5.0 (Linux; Android {a}; Redmi Note 7.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
 	ugen.append(uaku2)
@@ -184,7 +184,7 @@ def banner():
  \_|  \_| |_/\____/\____/\____/  \___/  \___/\_| \_/ 
 
 
-             """,width=90,title=f"Hallo",style=f"italic yellow"))
+             """,width=90,title=f"Hallo",style=f"bold yellow"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
