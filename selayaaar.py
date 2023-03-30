@@ -184,7 +184,7 @@ def banner():
  \_|  \_| |_/\____/\____/\____/  \___/  \___/\_| \_/ 
 
 
-             """,width=90,title=f"Hallo Boss",style=f"bold yellow"))
+             """,width=90,title=f"Hallo",style=f"italic yellow"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -260,7 +260,7 @@ def login_lagi334():
 							cook= open(".cok.txt","w").write(your_cookies)
 							print("\n ╰─  Login Berhasil | python selayaaar.py");exit()
 			except Exception as e:
-				print(" ╰─  Cookies Mokad Kontol")
+				print(" ╰─  Cookies Tidak Cocok Ganti yang Lain")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
 				print(e)
 				time.sleep(3)
