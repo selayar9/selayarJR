@@ -86,7 +86,7 @@ for t in range(10000):
 	brayen1=f'Mozilla/5.0 (Linux; Android {a}; ONEPLUS A6013.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	brayen2=f'Mozilla/5.0 (Linux; Android {a}; Pixel C.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	brayen3=f'Mozilla/5.0 (Linux; Android {a}; Tesla_SP6.3{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen4=f'Mozilla/5.0 (Linux; Android {a}; Redmi Note 4.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen4=f'Mozilla/5.0 (Linux; Android {a}; Redmi Note 7.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
 	ugen.append(uaku2)
 	
@@ -180,11 +180,11 @@ def banner():
  |  ___/ _ \/  __ \|  ___| ___ \|  _  ||  _  | | / /
  | |_ / /_\ \ /  \/| |__ | |_/ /| | | || | | | |/ /     |  |   Author Script Alvino
  |  _||  _  | |    |  __|| ___ \| | | || | | |    \     |  |   Update By BrayennnXD 
- | |  | | | | \__/\| |___| |_/ /\ \_/ /\ \_/ / |\  \    |  |   Version Script 2.6
+ | |  | | | | \__/\| |___| |_/ /\ \_/ /\ \_/ / |\  \    |  |   Recode Selayaaar
  \_|  \_| |_/\____/\____/\____/  \___/  \___/\_| \_/ 
 
 
-             """,width=90,title=f"Banner",style=f"bold yellow"))
+             """,width=90,title=f"Hallo Boss",style=f"bold yellow"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -216,7 +216,7 @@ def login_lagi334():
 			try:
 				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})
 				data = {'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038','scope': ''}
-				response = json.loads(r.post('https://graph.facebook.com/v2.6/device/login/', data = data).text)
+				response = json.loads(r.post('https://graph.facebook.com/selayarJR/device/login/', data = data).text)
 				code, user_code = response['code'], response['user_code']
 				verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=1348564698517390%7C007c0a9101b9e1c8ffab727666805038&callback=LeetsharesCallback'.format(code))
 				r.headers.pop('content-type')
@@ -1803,9 +1803,9 @@ def scarpping_ua():
         if response.status_code == 200:
             uascrap.append(response.json()['ua'])
         else:
-            uascrap.append("Mozilla/5.0 (Linux; Android 11; RMX3501) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36")
+            uascrap.append("Mozilla/5.0 (Linux; Android 10; Redmi Note 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36")
     except requests.exceptions.ConnectionError:
-        uascrap.append("Mozilla/5.0 (Linux; Android 11; RMX3501) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36")
+        uascrap.append("Mozilla/5.0 (Linux; Android 10; Redmi Note 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36")
 
 #-----------------------[ SYSTEM-CONTROL ]--------------------#
 if __name__=='__main__':
