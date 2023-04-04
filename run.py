@@ -306,8 +306,9 @@ def login_lagi334():
 							'sec-fetch-site': 'cross-site',
 							})
 							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
-							access_token = re.search('"access_token"')
-	
+							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
+							print(f"\n ╰─  Token : {access_token}")
+							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
 							print("\n ╰─  Login Berhasil | python selayar.py");exit()
 			except Exception as e:
