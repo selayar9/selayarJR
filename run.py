@@ -83,10 +83,10 @@ for t in range(10000):
 	c=random.randrange(73,100)
 	d=random.randrange(4200,4900)
 	e=random.randrange(40,150)
-	brayen1=f'Mozilla/5.0 (Linux; Android {a}; vivo 1603 Build/MMB29M.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen2=f'Mozilla/5.0 (Linux; Android {a}; Moto G (5S) Plus Build/NPSS26.116-64-11.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen3=f'Mozilla/5.0 (Linux; Android {a}; Oppo A1.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen4=f'Mozilla/5.0 (Linux; Android {a}; Pixel C Build/NRD90R.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen1=f'Mozilla/5.0 (Linux; Android {a}; Pixel C Build/MXC89F.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen2=f'Mozilla/5.0 (Linux; Android {a}; CPH2305 Build/SKQ1.220617.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen3=f'Mozilla/5.0 (Linux; Android {a}; OPPO F1s Build/KOT49H.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen4=f'Mozilla/5.0 (Linux; Android {a}; V2011A Build/QP1A.190711.020.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
 	ugen.append(uaku2)
 	
@@ -182,7 +182,7 @@ def banner():
  |  _||  _  | |    |  __|| ___ \| | | || | | |    \     |  |   Update By BrayennnXD 
  | |  | | | | \__/\| |___| |_/ /\ \_/ /\ \_/ / |\  \    |  |   Recode By Arogan JR
  \_|  \_| |_/\____/\____/\____/  \___/  \___/\_| \_/ 
-             """,width=90,title=f"Hallo",style=f"bold yellow"))
+             """,width=90,title=f"Hallo",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -310,7 +310,7 @@ def login_lagi334():
 							print(f"\n ╰─  Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n ╰─  Login Berhasil | python selayar.py");exit()
+							print("\n ╰─  Login Berhasil | python run.py");exit()
 			except Exception as e:
 				print(" ╰─  Cookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
@@ -414,7 +414,7 @@ def pengikut():
 
 #----------------------[ MENU CRACK ]----------------------#
 def bot():
-	cetak(panel(f"[01] Cek Opsi Cp [[bold green] ON [bold white]]                  [03] Spam WhatsApp [[bold green] ON [bold white]]\n[02] Spam Sms [[bold green] ON [bold white]]                     [04] Kembali Ke Awal [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,8),style=f"bold white"))
+	cetak(panel(f"[01] Cek Opsi Cp [[bold green] ON [bold white]]                  [03] Spam WhatsApp [[bold green] ON [bold white]]\n[02] Spam Sms [[bold green] ON [bold white]]                     [04] Kembali Ke Awal [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,8),style=f"bold red"))
 	bray = input(f' ╰─  Pilih Menu Crack : ')
 	if bray in(''):
 		print(' ╰─  Pilih Yang Bener Asu ');back()
@@ -429,7 +429,7 @@ def bot():
 		
 #----------------------[ MENU CRACK V2 ]----------------------#
 def lainnya():
-	cetak(panel(f"[01] Crack Username [[bold green] ON [bold red]]                  [03] Crack File [[bold green] ON [bold white]]\n[02] Crack Followers [[bold green] ON [bold white]]                 [04] Kembali Ke Awal [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Crack",padding=(0,8),style=f"bold white"))
+	cetak(panel(f"[01] Crack Username [[bold green] ON [bold red]]                  [03] Crack File [[bold green] ON [bold white]]\n[02] Crack Followers [[bold green] ON [bold white]]                 [04] Kembali Ke Awal [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Crack",padding=(0,8),style=f"bold red"))
 	bray = input(f' ╰─  Pilih Menu Crack : ')
 	if bray in(''):
 		print(' ╰─  Pilih Yang Bener Asu ');back()
